@@ -20,40 +20,6 @@ const posts: BlogPost[] = [
   // Adicione mais posts aqui
 ];
 
-// const LeftPart = () => {
-//     return(
-//         <div>
-//             <div>
-//                 <img src="" alt="" />
-//                 <p>Janeiro 04, 2022</p>
-//             </div>
-//             <div>
-//                 <h2>Começando no ReactJS em 2022</h2>
-//                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque facere modi animi autem voluptatibus praesentium quis. Quisquam sapiente unde quidem corrupti inventore sint perspiciatis natus, cum voluptatem porro et accusantium.</p>
-//             </div>
-//         </div>
-//     );
-// }
-// const RightPart = () => {
-//     return(
-//         <div>
-//             <div>
-//                 <p>Janeiro 04, 2022</p>
-//                 <h2>Conheça as principais ténicas para conseguir uma vaga internacional em programação</h2>
-//                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus qui, enim, alias nemo, nisi omnis dolores explicabo animi sequi neque in vero saepe dicta laboriosam impedit laborum dignissimos illo eveniet!</p>
-//             </div>
-//             <div>
-//                 <p>Janeiro 04, 2022</p>
-//                 <h2>Veja a evolução do Front-end na prática</h2>
-//                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque facere modi animi autem voluptatibus praesentium quis. Quisquam sapiente unde quidem corrupti inventore sint perspiciatis natus, cum voluptatem porro et accusantium.</p>
-//             </div>
-//         </div>
-//     );
-// }
-
-
-
-
 const BlogPostList = () => {
   return (
     <section className="py-10">

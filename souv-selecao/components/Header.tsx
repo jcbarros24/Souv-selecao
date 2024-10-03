@@ -15,7 +15,7 @@ const Header = () => {
           </ul>
         </nav>
 
-        <div className="relative">
+        <div>
         <input
             type="text"
             placeholder="Buscar"

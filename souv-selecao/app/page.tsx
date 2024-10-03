@@ -1,7 +1,7 @@
 import Hero from "../components/Hero";
 import Conteudo from "../components/Conteudo";
 import Header from "../components/Header";
-// import Footer from "../components/Footer";
+import ComecandoPart from "../components/ComecandoPart";
 import React from "react";
 
 export default function Home() {
@@ -9,6 +9,7 @@ export default function Home() {
     <>
     <Header />
     <Hero />
+    <ComecandoPart />
     <Conteudo />
   </>
 
