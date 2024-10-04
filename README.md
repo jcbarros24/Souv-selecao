@@ -26,7 +26,7 @@ Este é o projeto para o processo seletivo da **Souv**. Uma aplicação constru�
 ### 1. Clonar o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone (https://github.com/jcbarros24/Souv-selecao.git)
 cd souv-selecao
 ```
 
