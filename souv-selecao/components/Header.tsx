@@ -1,12 +1,17 @@
 import React from 'react';
+import Image from 'next/image';
 
 const Header = () => {
   return (
     <header className="bg-custom-dark-purple text-white">
-      <div className="container mx-auto flex justify-between items-center py-4 px-6">
-        <img src="/imgs/logo.svg" alt="logo the blog" />
-
-        <nav className="flex-1 mx-10">
+      <div className="container mx-auto flex justify-between items-center pt-10 px-6">
+        <Image
+            src="/imgs/logo.svg"
+            alt="logo the blog"
+            width={150} 
+            height={50} 
+          />
+        <nav className="mx-10">
           <ul className="flex justify-center space-x-7">
             <li><a href="#" className="hover:text-gray-300 ">Home</a></li>
             <li><a href="#" className="hover:text-gray-300">Sobre</a></li>

@@ -1,34 +1,50 @@
 import React from 'react';
+import Image from 'next/image';
 
 type BlogPost = {
-  date: string;
-  title: string;
-  excerpt: string;
+  data: string;
+  titulo: string;
+  descricao: string;
+  imagem: string;
 };
 
 const posts: BlogPost[] = [
   {
-    date: 'Janeiro 04, 2022',
-    title: 'Conheça as principais técnicas para conseguir uma vaga internacional em programação',
-    excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+    data: 'Janeiro 04, 2022',
+    titulo: '10 dicas pra conseguir a vaga desejada',
+    descricao: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+    imagem: '/imgs/ImagemPC3.png' 
   },
   {
-    date: 'Janeiro 04, 2022',
-    title: 'Veja a evolução do Front-end na prática',
-    excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+    data: 'Janeiro 04, 2022',
+    titulo: 'Deixe seu código mais semântico com essas dicas',
+    descricao: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+    imagem: '/imgs/ImagemPC4.png' 
   },
-  // Adicione mais posts aqui
+  {
+    data: 'Janeiro 04, 2022',
+    titulo: 'Use essas dicas nas suas aplicações mobile',
+    descricao: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+    imagem: '/imgs/ImagemPC5.png' 
+  }
 ];
 
 const BlogPostList = () => {
   return (
     <section className="py-10">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
         {posts.map((post, index) => (
-          <div key={index} className="bg-white p-6 rounded shadow-lg">
-            <p className="text-sm text-gray-500 mb-2">{post.date}</p>
-            <h2 className="text-2xl font-bold mb-2">{post.title}</h2>
-            <p>{post.excerpt}</p>
+          <div key={index} className="bg-white p-8 ">
+            <Image
+              src={post.imagem}
+              alt={post.titulo}
+              width={500}
+              height={300} 
+              className="w-full h-90 object-cover rounded mb-4"
+            />
+            <p className="text-sm text-gray-500 mb-2">{post.data}</p>
+            <h2 className="text-2xl font-bold mb-2 text-custom-dark-purple">{post.titulo}</h2>
+            <p className='text-lg'>{post.descricao}</p>
           </div>
         ))}
       </div>

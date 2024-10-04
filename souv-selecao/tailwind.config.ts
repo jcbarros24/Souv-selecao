@@ -10,10 +10,15 @@ const config: Config = {
     extend: {
       colors: {
         'custom-dark-purple': '#290742',
-        'custom-light-purple': '#9671bd',
+        'custom-light-purple': '#9E6DC2',
+        'custom-green-color': '#4FFF4B',
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        poppins: ['Poppins'],
+        roboto: ['Roboto']
+      }
     },
   },
   plugins: [],
