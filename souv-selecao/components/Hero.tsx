@@ -20,8 +20,8 @@ const Hero = () => {
             <Image
               src="/imgs/arrow-right.svg"
               alt="arrow"
-              width={20} // Defina a largura da imagem
-              height={20} // Defina a altura da imagem
+              width={20} 
+              height={20} 
               className="ml-1 w-5 h-5"
             />
           </div>
@@ -31,8 +31,8 @@ const Hero = () => {
           <Image
             src="/imgs/ImagemPC2.png"
             alt="img-hero"
-            width={500} // Defina a largura
-            height={300} // Defina a altura
+            width={500} 
+            height={300} 
             className="w-full h-auto object-cover"
           />        
         </div>

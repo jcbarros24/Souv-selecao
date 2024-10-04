@@ -3,6 +3,9 @@
 
 Este é o projeto para o processo seletivo da **Souv**. Uma aplicação construída com **Next.js** e **TailwindCSS**. 
 
+**Link para o Vercel com deploy**
+[Vercel deploy](https://souv-selecao.vercel.app/)
+
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -78,7 +81,12 @@ Dentro do diretório souv-selecao **(com s minúsculo)**
 docker build .
 ```
 
-### 3. Rodar o container Docker
+### OBS IMPORTANTE
+Caso sua porta 3000 já estiver sendo utilizada, tanto o docker quanto o docker-compose não irão rodar. Então certifique-se
+de estar com a porta 3000 desligada.
+
+
+### 3. Rodar o container Docker 
 
 Depois que a imagem for criada, você pode rodar o container com o comando:
 
@@ -92,6 +100,7 @@ Isso irá iniciar o servidor e expor a aplicação na porta:
 ```
 http://localhost:3000
 ```
+
 
 ### 3. Usando `docker-compose` (opcional)
 
